@@ -1,0 +1,68 @@
+arafat@arafat-HP-450-Notebook-PC:~/Desktop/t$ irb -r./example
+2.2.1 :001 > a=Example::Square.new(2,3)
+ => #<Example::Square:0x00000001671320 @__swigtype__="_p_Square"> 
+2.2.1 :002 > a.area
+Area 6
+ => nil 
+2.2.1 :003 > a.perimeter
+perimeter 10
+ => nil 
+2.2.1 :004 > a=Example.fibonacci(12)
+ => 144 
+2.2.1 :005 > a=Example.fibonacci(5)
+ => 5 
+2.2.1 :006 > a=Example::PI
+ => 3.14159 
+2.2.1 :007 > a=Example::FOO
+ => 42 
+2.2.1 :008 > a=Example::IntVector.new
+ => std::vector<int,std::allocator< int > > [] 
+2.2.1 :009 > a.push(23)
+ => 23 
+2.2.1 :010 > a.push(5)
+ => 5 
+2.2.1 :011 > a.push(123)
+ => 123 
+2.2.1 :012 > a.push(7)
+ => 7 
+2.2.1 :013 > a
+ => std::vector<int,std::allocator< int > > [23,5,123,7] 
+2.2.1 :014 > a=Example::IntSet.new
+ => std::set<int,std::less< int >,std::allocator< int > > [] 
+2.2.1 :015 > a.push(11)
+ => 11 
+2.2.1 :016 > a.push(7)
+ => 7 
+2.2.1 :017 > a.push(123)
+ => 123 
+2.2.1 :018 > a.push(-3)
+ => -3 
+2.2.1 :019 > a
+ => std::set<int,std::less< int >,std::allocator< int > > [-3,7,11,123] 
+2.2.1 :020 > a[0]
+ => -3 
+2.2.1 :021 > a[1]
+ => 7 
+2.2.1 :022 > a[2]
+ => 11 
+2.2.1 :023 > a[3]
+ => 123 
+2.2.1 :024 > a.push(-100)
+ => -100 
+2.2.1 :025 > a[0]
+ => -100 
+2.2.1 :026 > a
+ => std::set<int,std::less< int >,std::allocator< int > > [-100,-3,7,11,123] 
+2.2.1 :027 > a.erase(a.begin)
+ => nil 
+2.2.1 :028 > a
+ => std::set<int,std::less< int >,std::allocator< int > > [-3,7,11,123] 
+2.2.1 :029 > a.erase(a.begin)
+ => nil 
+2.2.1 :030 > a
+ => std::set<int,std::less< int >,std::allocator< int > > [7,11,123] 
+2.2.1 :031 > a.erase(a.begin)
+ => nil 
+2.2.1 :032 > a
+ => std::set<int,std::less< int >,std::allocator< int > > [11,123] 
+2.2.1 :033 > 

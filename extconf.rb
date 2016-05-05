@@ -1,3 +1,3 @@
 require 'mkmf'
-system('swig -c++ -ruby libdavid.i') or abort
-create_makefile('david')
+system('swig -c++ -ruby example.i') or abort
+create_makefile('example')
