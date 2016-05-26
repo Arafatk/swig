@@ -66,3 +66,30 @@ perimeter 10
 2.2.1 :032 > a
  => std::set<int,std::less< int >,std::allocator< int > > [11,123] 
 2.2.1 :033 > 
+2.2.1 :001 > a = 
+2.2.1 :002 >   Example::Imap.new
+ => std::map<swig::GC_VALUE,swig::GC_VALUE,std::less< swig::GC_VALUE >,std::allocator< std::pair< swig::GC_VALUE const,swig::GC_VALUE > > > {} 
+2.2.1 :003 > a["arafat"]=15
+ => 15 
+2.2.1 :004 > a["science"]= "fun"
+ => "fun" 
+2.2.1 :005 > a[42]="Answer to everything"
+ => "Answer to everything" 
+2.2.1 :006 > a
+ => std::map<swig::GC_VALUE,swig::GC_VALUE,std::less< swig::GC_VALUE >,std::allocator< std::pair< swig::GC_VALUE const,swig::GC_VALUE > > > {42=>"Answer to everything","arafat"=>15,"science"=>"fun"} 
+2.2.1 :007 > a["arafat"]
+ => 15 
+2.2.1 :008 > a["science"]
+ => "fun" 
+2.2.1 :009 > a[42]
+ => "Answer to everything" 
+2.2.1 :010 > a[1]
+ => nil 
+2.2.1 :011 > a[1]=42
+ => 42 
+2.2.1 :012 > a[2]=45
+ => 45 
+2.2.1 :013 > a
+ => std::map<swig::GC_VALUE,swig::GC_VALUE,std::less< swig::GC_VALUE >,std::allocator< std::pair< swig::GC_VALUE const,swig::GC_VALUE > > > {1=>42,2=>45,42=>"Answer to everything","arafat"=>15,"science"=>"fun"} 
+2.2.1 :014 > a[2]
+ => 45 
