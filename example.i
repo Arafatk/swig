@@ -32,3 +32,9 @@ namespace std {
 namespace std {
    %template(IntSet) set<int>;
 }
+
+
+%include <std_map.i>
+namespace std {
+   %template(Imap) map<swig::GC_VALUE, swig::GC_VALUE>;
+}
